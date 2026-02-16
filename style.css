@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Darker+Grotesque:wght@300..900&display=swap');
+
+:root{
+    --bg: #fff;
+    --fg: #000;
+    --a: #00f;
+    @media  (prefers-colors-scheme: dark) {
+        --bg: #000;
+        --fg: #fff;
+        --a: #f00;
+    }
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    font-family: "Darker Grotesque", serif;
+}
+
+#page{
+    background-color: var(--bg);
+    color: var(--fg);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#prime{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+#section{
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+ul {
+    margin-left: 1rem;
+
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+li {
+    list-style-type: "⚡";
+    padding: 0.5;
+}
+
+
+h1,h2 {
+    font-family: "Darker Grotesque", serif;
+}
+
+a{
+    color: var(--a);
+    text-decoration: none;
+}
